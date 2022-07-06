@@ -1,4 +1,6 @@
-import app from "./appSlice";
 import { combineReducers } from "redux";
 
-export default combineReducers({ app });
+import app from "./appSlice";
+import charge from "./chargeSlice";
+
+export default combineReducers({ app, charge });

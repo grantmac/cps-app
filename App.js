@@ -4,6 +4,7 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 import useCachedResources from "./hooks/useCachedResources";
 import useColorScheme from "./hooks/useColorScheme";
 import Navigation from "./navigation";
+import { TokenGenerator } from "./components/TokenGenerator";
 
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
@@ -23,6 +24,7 @@ export default function App() {
     return (
       <SafeAreaProvider>
         <Provider store={store}>
+          <TokenGenerator />
           <Navigation colorScheme={colorScheme} />
           <StatusBar />
         </Provider>
