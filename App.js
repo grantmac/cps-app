@@ -25,6 +25,7 @@ export default function App() {
       <SafeAreaProvider>
         <Provider store={store}>
           <TokenGenerator />
+
           <Navigation colorScheme={colorScheme} />
           <StatusBar />
         </Provider>
